@@ -1,0 +1,97 @@
+==========
+Args:Namespace(arch='agw', batch_size=256, data_dir='/dat01/yangbin/ADCA_main/data', dataset='sysu_all', dropout=0, epochs=50, eps=0.6, eps_gap=0.02, eval_step=1, features=0, height=288, iters=200, k1=30, k2=6, logs_dir='/dat01/yangbin/ADCA_main/logs/sysu_s2', lr=0.00035, milestones=[20, 40], momentum=0.1, no_cam=False, num_instances=16, pooling_type='gem', print_freq=10, seed=1, step_size=20, temp=0.05, use_hard=False, warmup_step=0, weight_decay=0.0005, width=144, workers=8)
+==========
+==> Test with the best model:  all
+=> Loaded checkpoint '/dat01/yangbin/ADCA_main/logs/sysu_s2/model_best.pth.tar'
+Extracting Query Feature...
+test_sysu.py:95: DeprecationWarning: ANTIALIAS is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.LANCZOS instead.
+  img = img.resize((img_size[0], img_size[1]), Image.ANTIALIAS)
+Extracting Time:	 29.351
+Extracting Gallery Feature...
+Extracting Time:	 3.423
+Test Trial: 0
+FC:   Rank-1: 44.54% | Rank-5: 73.36% | Rank-10: 84.64%| Rank-20: 93.27%| mAP: 40.80%| mINP: 25.52%
+Extracting Gallery Feature...
+Extracting Time:	 2.083
+Test Trial: 1
+FC:   Rank-1: 41.65% | Rank-5: 73.76% | Rank-10: 85.80%| Rank-20: 93.51%| mAP: 40.63%| mINP: 26.64%
+Extracting Gallery Feature...
+Extracting Time:	 2.108
+Test Trial: 2
+FC:   Rank-1: 46.59% | Rank-5: 72.89% | Rank-10: 83.96%| Rank-20: 91.95%| mAP: 42.03%| mINP: 26.13%
+Extracting Gallery Feature...
+Extracting Time:	 2.083
+Test Trial: 3
+FC:   Rank-1: 46.96% | Rank-5: 74.57% | Rank-10: 84.67%| Rank-20: 93.79%| mAP: 43.09%| mINP: 27.84%
+Extracting Gallery Feature...
+Extracting Time:	 2.091
+Test Trial: 4
+FC:   Rank-1: 45.62% | Rank-5: 75.94% | Rank-10: 86.12%| Rank-20: 93.74%| mAP: 43.57%| mINP: 28.67%
+Extracting Gallery Feature...
+Extracting Time:	 2.112
+Test Trial: 5
+FC:   Rank-1: 42.44% | Rank-5: 72.10% | Rank-10: 83.96%| Rank-20: 93.64%| mAP: 39.98%| mINP: 24.37%
+Extracting Gallery Feature...
+Extracting Time:	 2.032
+Test Trial: 6
+FC:   Rank-1: 44.44% | Rank-5: 71.94% | Rank-10: 82.96%| Rank-20: 92.01%| mAP: 40.47%| mINP: 25.91%
+Extracting Gallery Feature...
+Extracting Time:	 2.133
+Test Trial: 7
+FC:   Rank-1: 42.41% | Rank-5: 70.81% | Rank-10: 82.17%| Rank-20: 91.74%| mAP: 39.50%| mINP: 25.11%
+Extracting Gallery Feature...
+Extracting Time:	 2.163
+Test Trial: 8
+FC:   Rank-1: 45.65% | Rank-5: 71.63% | Rank-10: 82.88%| Rank-20: 91.35%| mAP: 41.68%| mINP: 27.24%
+Extracting Gallery Feature...
+Extracting Time:	 2.076
+Test Trial: 9
+FC:   Rank-1: 45.49% | Rank-5: 73.00% | Rank-10: 83.49%| Rank-20: 92.30%| mAP: 42.35%| mINP: 28.14%
+All Average:
+FC:     Rank-1: 44.58% | Rank-5: 73.00% | Rank-10: 84.07%| Rank-20: 92.73%| mAP: 41.41%| mINP: 26.56%
+==> Test with the best model:  indoor
+Extracting Query Feature...
+Extracting Time:	 17.495
+Extracting Gallery Feature...
+Extracting Time:	 1.655
+Test Trial: 0
+FC:   Rank-1: 53.35% | Rank-5: 79.76% | Rank-10: 89.13%| Rank-20: 95.56%| mAP: 59.36%| mINP: 54.18%
+Extracting Gallery Feature...
+Extracting Time:	 1.222
+Test Trial: 1
+FC:   Rank-1: 50.45% | Rank-5: 74.18% | Rank-10: 85.24%| Rank-20: 94.25%| mAP: 55.71%| mINP: 50.46%
+Extracting Gallery Feature...
+Extracting Time:	 1.142
+Test Trial: 2
+FC:   Rank-1: 46.42% | Rank-5: 73.78% | Rank-10: 86.14%| Rank-20: 93.07%| mAP: 54.70%| mINP: 50.91%
+Extracting Gallery Feature...
+Extracting Time:	 1.272
+Test Trial: 3
+FC:   Rank-1: 52.45% | Rank-5: 80.39% | Rank-10: 89.63%| Rank-20: 95.74%| mAP: 58.97%| mINP: 53.73%
+Extracting Gallery Feature...
+Extracting Time:	 1.108
+Test Trial: 4
+FC:   Rank-1: 52.85% | Rank-5: 79.57% | Rank-10: 88.27%| Rank-20: 94.61%| mAP: 59.34%| mINP: 54.51%
+Extracting Gallery Feature...
+Extracting Time:	 1.250
+Test Trial: 5
+FC:   Rank-1: 50.09% | Rank-5: 78.85% | Rank-10: 88.68%| Rank-20: 95.24%| mAP: 57.37%| mINP: 52.76%
+Extracting Gallery Feature...
+Extracting Time:	 1.154
+Test Trial: 6
+FC:   Rank-1: 50.82% | Rank-5: 75.68% | Rank-10: 86.10%| Rank-20: 94.84%| mAP: 57.26%| mINP: 53.01%
+Extracting Gallery Feature...
+Extracting Time:	 1.238
+Test Trial: 7
+FC:   Rank-1: 52.67% | Rank-5: 81.66% | Rank-10: 89.13%| Rank-20: 95.02%| mAP: 59.68%| mINP: 54.63%
+Extracting Gallery Feature...
+Extracting Time:	 1.271
+Test Trial: 8
+FC:   Rank-1: 48.37% | Rank-5: 75.05% | Rank-10: 87.09%| Rank-20: 96.06%| mAP: 55.18%| mINP: 50.33%
+Extracting Gallery Feature...
+Extracting Time:	 1.163
+Test Trial: 9
+FC:   Rank-1: 47.19% | Rank-5: 79.98% | Rank-10: 89.90%| Rank-20: 96.97%| mAP: 56.53%| mINP: 52.30%
+All Average:
+FC:     Rank-1: 50.47% | Rank-5: 77.89% | Rank-10: 87.93%| Rank-20: 95.14%| mAP: 57.41%| mINP: 52.68%
+Total running time:  0:06:55.158917
