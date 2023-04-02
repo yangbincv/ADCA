@@ -1,2 +1,2 @@
 # ADCA
-We will release the code soon.
+We have released the code in master branch.
